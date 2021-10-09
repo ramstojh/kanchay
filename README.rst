@@ -1,6 +1,16 @@
 
 *kanchay* means light in the Inca–Andean–Quechua cosmovision. *kanchay* is a simple tool based on lightkurve, starspot and exoplanet codes to download light curves and measure their rotational periods using methods such as Lomb-Scargle Periodograms, autocorrelation functions (ACFs), Phase Dispersion Minimization (PDM), and Gaussian Processes (GPs). Such methods are well described in `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_.
 
+Installation
+------------
+Installing kanchay requires only one step with pip:
+
+```sh
+$ pip install kanchay
+```
+
+
+
 
 Example usage
 -------------
