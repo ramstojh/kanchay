@@ -1,17 +1,18 @@
 
-*kanchay* means light in the Inca–Andean–Quechua cosmovision. *kanchay* is a simple tool based on lightkurve, starspot and exoplanet codes to download light curves and measure their rotational periods using methods such as Lomb-Scargle Periodograms, autocorrelation functions (ACFs), Phase Dispersion Minimization (PDM), and Gaussian Processes (GPs). Such methods are well described in `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_.
+*kanchay* means light in the Inca–Andean–Quechua cosmovision. *kanchay* is a simple tool based on `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_ codes to download light curves and measure their rotational periods using methods such as Lomb-Scargle Periodograms, autocorrelation functions (ACFs), Phase Dispersion Minimization (PDM), and Gaussian Processes (GPs). Such methods are well described in `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_.
 
 Installation
 ------------
-Installing kanchay requires only one step with pip:
+Installing kanchay requires only one step. Please run the follwing pip command::
 
-```sh
-$ pip install kanchay
-```
+    pip install astropy
 
+Dependencies
+------------
+The mean dependences of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. For installing these codes, please see their installation instructions. The otherd dependences are installed using pip::
 
-
-
+    pip install matplotlib tqdm numpy pandas pymc3 Theano exoplanet
+    
 Example usage
 -------------
 
@@ -34,6 +35,13 @@ Example usage
     
     # If you want to save the outputs with a specific name (e.g., a star name).
     terra.pacha(feh=0.164, mass=1, Mcon=0.01, data_input='obs_abd.csv', data_output='HIP71726')
+
+
+Contributing
+------------
+
+Author
+------
 
 
 License & attribution
