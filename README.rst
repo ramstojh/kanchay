@@ -3,9 +3,9 @@
 
 Installation
 ------------
-Installing kanchay requires only one step. Please run the follwing pip command::
+Installing *kanchay* requires only one step. Please run the follwing pip command::
 
-    pip install astropy
+    pip install kanchay
 
 Dependencies
 ------------
@@ -18,36 +18,38 @@ Example usage
 
 .. code-block:: python
 
-    from pachamama import terra
+    from kanchay import kan
     
-    # Computing convective mass of a star with [Fe/H] = 0.164 dex 
-    # and mass = 1.14 solar masses
-    # The mass can take values from 0.5 <= M <= 1.3 (solar mass)
-    # The [Fe/H] can take values from -1.0 <= [Fe/H] <= 0.3 (dex)
-    # By default the code computes the convective mass using the Yale isocrhones of stellar evolution
-    terra.cvmass(feh=0.1, mass=1)
+    # Search TESS light curve of a given star
+    # The tool download and plot all the SPOC light curves (LC) observed by TESS
+    # The tool also normalize and apply a sigma clipping to the LCs. The normalized LC is stores in x (time), y (flux) an yerr (flux error).
+    starid='Gaia DR2 2395082091638750848'
+    x, y, yerr = kan.search_lk(starid, mission='TESS')
     
+    #you can plot a region of the LC
+    import matplotlib.pyplot as plt
+    plt.scatter(x[0][2000:8500], y[0][2000:8500])
     
-    # Computing the abundance pattern of a star with [Fe/H] = 0.164 dex, 
-    # mass = 1.14 solar mass, Mcon (convective mass) 0.01. 
-    # obs_abd.csv is a table containing the observed abundance. See the terra file example 
-    terra.pacha(feh=0.164, mass=1, Mcon=0.01, data_input='obs_abd.csv')
+    #
+    kan.rotation_calc(x[0][2000:8500], y[0][2000:8500], yerr[0][2000:8500])
     
-    # If you want to save the outputs with a specific name (e.g., a star name).
-    terra.pacha(feh=0.164, mass=1, Mcon=0.01, data_input='obs_abd.csv', data_output='HIP71726')
-
+    #
+    kan.rotation_calc(x[0][2000:8500], y[0][2000:8500], yerr[0][2000:8500], gp='yes')
+    
 
 Contributing
 ------------
+*kanchay* is a simple tool created to help undergraduate studends to measure stellar rotational periods in a easy way, therefore the tool needs input improve. Please contact me (ramstojh@alumni.usp.br) if you have questions. Users are welcome propose new features, or report a bugs by opening an issue on GitHub.
+
 
 Author
 ------
-
+- `Jhon Yana Galarza <https://github.com/ramstojh>`_
 
 License & attribution
 ---------------------
 
-Copyright 2021, Jhon Yana.
+Copyright 2021, Jhon Yana Galarza.
 
 The source code is made available under the terms of the MIT license.
 
