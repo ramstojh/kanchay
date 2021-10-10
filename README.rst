@@ -37,6 +37,8 @@ Example usage
     # You can also determine rotational periods using GP (thanks to the exoplanet code)
     kan.rotation_calc(x[0][2000:8500], y[0][2000:8500], yerr[0][2000:8500], gp='yes')
     
+    #For more details please see the kanchay's tutorial
+    
 
 Contributing
 ------------
