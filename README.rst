@@ -13,7 +13,7 @@ The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org
 
     pip install matplotlib tqdm numpy pandas pymc3 pymc3-ext Theano exoplanet
     
- Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on linux (linux mint, ubuntu, debian).
+Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on linux (linux mint, ubuntu, debian).
     
 Example usage
 -------------
