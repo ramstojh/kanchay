@@ -52,6 +52,11 @@ Authors
 - `Jhon Yana Galarza <https://github.com/ramstojh>`_
 - `Adriana Valio <https://orcid.org/0000-0002-1671-8370>`_
 
+Mainteiners
+-----------
+- `Kayleigh Meneghini <https://github.com/kaykeigh>`_
+
+
 License & attribution
 ---------------------
 
