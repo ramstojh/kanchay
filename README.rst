@@ -1,5 +1,17 @@
+kanchay
+=======
 
+.. image:: https://img.shields.io/badge/powered%20by-lightkurve-red
+    :target: https://docs.lightkurve.org/
+
+.. image:: https://img.shields.io/badge/powered%20by-starspot-red
+    :target: https://starspot.readthedocs.io/en/latest/index.html#/
+
+.. image:: https://img.shields.io/badge/powered%20by-exoplanet-red
+    :target: https://docs.exoplanet.codes/en/stable/
+    
 *kanchay* means light in the Inca–Andean–Quechua cosmovision. *kanchay* is a simple tool based on `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_ codes to download light curves and measure their rotational periods using methods such as Lomb-Scargle Periodograms (LS), autocorrelation functions (ACFs), Phase Dispersion Minimization (PDM), and Gaussian Processes (GPs). Such methods are well described in `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_.
+
 
 Installation
 ------------
