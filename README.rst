@@ -37,7 +37,7 @@ And finally install `starspot <https://starspot.readthedocs.io/en/latest/index.h
     cd starspot
     python setup.py install
 
-Note that the above instructions are only for Linux. For other operating systems please see their own installation instructions.   
+Note that the above instructions are only for Linux. To install these dependencies on other operating systems, please see their own installation instructions.   
 Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on linux (linux mint, ubuntu, debian).
 
 Note that *kanchay* requires of Pandas < 1.4.
