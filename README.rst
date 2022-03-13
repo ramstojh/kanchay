@@ -26,13 +26,21 @@ Dependencies
 The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. However, there are other dependences such as `PyMC3 <https://docs.pymc.io/en/v3/>`_, `PyMC3 Extras <https://pypi.org/project/pymc3-ext/>`_, and `celerite2 <https://pypi.org/project/celerite2/>`_. To properly install these codes, we strongly recomend following the instructions bellow::
 
     conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
-    pip install lightkurve exoplanet pymc3-ext celerite2
+    python -m pip install lightkurve --upgrade
+    python -m pip install -U exoplanet
+    python -m pip install -U celerite2
+    python -m pip install -U pymc3-ext
 
-For installing these codes, please see their installation instructions. The other dependencies are installed using pip::
+And finally install `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ from source::
 
-    pip install pymc3-ext celerite2
-    
+    git clone https://github.com/RuthAngus/starspot.git
+    cd starspot
+    python setup.py install
+
+Note that the above instructions are only for Linux. For other operating systems please see their own installation instructions.   
 Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on linux (linux mint, ubuntu, debian).
+
+Note that *kanchay* requires of Pandas < 1.4.
     
 Example usage
 -------------
