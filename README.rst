@@ -23,6 +23,7 @@ Note that you will need Python (>=3.7-3.9) installed.
 
 Dependencies
 ------------
+*kanchay* 
 The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. For installing these codes, please see their installation instructions. The other dependencies are installed using pip::
 
     pip install pymc3-ext celerite2
