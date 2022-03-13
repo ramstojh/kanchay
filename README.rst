@@ -19,11 +19,13 @@ Installing *kanchay* requires only one step. Please run the following pip comman
 
     pip install kanchay
 
+Note that you will need Python (>=3.7-3.9) installed.
+
 Dependencies
 ------------
 The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. For installing these codes, please see their installation instructions. The other dependencies are installed using pip::
 
-    pip install matplotlib tqdm numpy pandas pymc3 pymc3-ext Theano exoplanet celerite2 Theano-PyMC aesara
+    pip install pymc3-ext celerite2
     
 Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on linux (linux mint, ubuntu, debian).
     
