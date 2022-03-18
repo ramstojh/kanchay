@@ -20,6 +20,9 @@ Installing *kanchay* requires only one step. Please run the following pip comman
     pip install kanchay
 
 Note that you will need Python (>=3.7-3.9) installed.
+If you already have *terra* installed, you should consider upgrading to the latest version via::
+
+    pip install kanchay --upgrade
 
 Dependencies
 ------------
