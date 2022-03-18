@@ -82,7 +82,7 @@ Authors
 License & attribution
 ---------------------
 
-Copyright 2021, Jhon Yana Galarza.
+Copyright 2022, Jhon Yana Galarza.
 
 The source code is made available under the terms of the MIT license.
 
