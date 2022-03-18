@@ -37,7 +37,6 @@ And finally install `starspot <https://starspot.readthedocs.io/en/latest/index.h
     cd starspot
     python setup.py install
 
-Note that the above instructions are only for Linux. To install these dependencies on other operating systems, please see their own installation instructions.   
 Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on Linux (linux mint, ubuntu, debian).
 
 Note that *kanchay* requires of Pandas < 1.4.
@@ -53,7 +52,7 @@ Example usage
     # The tool downloads and plots all the SPOC light curves (LC) observed by TESS in several sectors
     # The tool also normalizes and applies sigma clipping to the LCs. The resultant LC is stored in arrays in x (time), y (flux) and yerr (flux error).
     starid='Gaia DR2 2395082091638750848'
-    x, y, yerr = kan.search_lk(starid, mission='TESS')
+    x, y, yerr = kan.tess_lk(starid, exptime=120, author='SPOC')
     
     # You can also plot a region of interest of the LC
     import matplotlib.pyplot as plt
