@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='kanchay',
-      version='1.9',
+      version='0.2',
       description='Tools based on lightkurve, starspot and exoplanet codes to measure rotational periods',
       url='https://github.com/ramstojh/kanchay',
       author='Jhon Yana',
