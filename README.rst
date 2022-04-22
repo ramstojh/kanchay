@@ -26,7 +26,7 @@ If you already have *terra* installed, you should consider upgrading to the late
 
 Dependencies
 ------------
-The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. However, there are other dependences such as `PyMC3 <https://docs.pymc.io/en/v3/>`_, `PyMC3 Extras <https://pypi.org/project/pymc3-ext/>`_, and `celerite2 <https://pypi.org/project/celerite2/>`_. To properly install these codes, we strongly recomend following the instructions bellow::
+The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. However, there are other dependences such as `PyMC3 <https://docs.pymc.io/en/v3/>`_, `PyMC3 Extras <https://pypi.org/project/pymc3-ext/>`_, and `celerite2 <https://pypi.org/project/celerite2/>`_. To properly install these codes, we strongly recomend following the instructions shown below::
 
     conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
     python -m pip install lightkurve --upgrade
